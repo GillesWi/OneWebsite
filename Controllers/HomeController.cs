@@ -23,13 +23,8 @@ public class HomeController : Controller
     // Index
     public async Task<IActionResult> Index()
     {
-        var cards = await _client.GetEntries<CreditCard>();
-        return View(cards);
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
+        var userData = await _client.GetEntries<OneWebsite>();
+        return View(userData);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,14 +1,89 @@
 ﻿@using Contentful.Core.Models
-@model ContentfulCollection<CreditCard>
+@model ContentfulCollection<OneWebsite>
 
+<body class="grey-background">
 
+    <nav>
+        <h1>V1</h1>
+        <h1>OneWebsite</h1>
+    </nav>
 
+    <header>
+        <img src="" alt="">
+        <h1 class=" welcome-text intro slide_right container">Hallo <span class="grey-text welcome-text slide_up"">
+                @foreach (var userData in Model)
+                {
 
-<h1>Credit Cards</h1>
+                    <h2>@userData.Username</h2>
+                    <img id="ProfilePicture" src="@userData.ProfilePicture.File.Url"
+                alt="@userData.ProfilePicture.Title" height="100px" width="100px">
+                }
+            </span></h1>
+    </header>
 
-@foreach (var card in Model)
-{
-    <h2>@card.Test</h2>
-    
-}
+    <div class=" tile-container slide_up">
+        <div class="tiles ">
+            <h2> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z" />
+                </svg> Performance</h2>
+            <p>Everything looks alright</p>
+            <img src="../../Images/Grass castles/Princes/Removed.png" alt="Photo1" height="300px" width="300px">
+        </div>
+        <div class="tiles">
+            <h2> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                </svg> Notifications</h2>
+            <p>No errors or warnings</p>
+            <img src="../../Images/Grass castles/Princes/Removed.png" alt="Photo2" height="300px" width="300px">
+        </div>
+        <div class="tiles">
+            <h2> <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                </svg> Users</h2>
+            <p>Live statistics</p>
+            <img src="../../Images/Grass castles/Clowns/Removed.png" alt="Photo3" height="300px" width="300px">
+        </div>
 
+        <!-- Tiles -->
+        <article class="container slide_right">
+            <section class="slide_right tile" id="tile1">
+                <a href="#">
+                    <h2>How to update to V2.0</h2>
+                    <p>It's simple, it's fast, just OneWebsite style</p>
+                    <img src="../../Images/Grass castles/small_castle.png" alt="Photo4" width="520px" height="340px">
+                    <p>Click here</p>
+                </a>
+            </section>
+            <section class="slide_right tile" id="tile2">
+                <a href="#">
+                    <h2>Get better SEO ranking</h2>
+                    <p>Check it out!</p>
+                    <img src="../../Images/Grass castles/big_castle.png" alt="Photo5" width="520px" height="340px">
+                    <p>Click here</p>
+                </a>
+            </section>
+            <section class="slide_right tile" id="tile3">
+                <a href="#">
+                    <h2>New features in V3 Beta preview </h2>
+                    <p>Sign up here!</p>
+
+                    <img src="../../Images/Grass castles/darts.png" alt="Photo6">
+                    <p>Click here</p>
+                </a>
+            </section>
+            <section class="slide_right tile" id="tile4">
+                <a href="#">
+                    <h2>Be aware of hackers</h2>
+                    <p>Important security warning</p>
+                    <img src="../../Images/Grass castles/table.png" alt="Photo7" width="520px" height="340px">
+                    <p>Click here</p>
+                </a>
+            </section>
+        </article>
+</body>
