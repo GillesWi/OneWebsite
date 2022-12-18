@@ -37,13 +37,13 @@ body {
 }
 
 nav{
+  margin-top: 0px;
   display: flex;
   text-align: center;
   justify-content: space-between;
   background-color: lightgray;
   border-radius: 0px 0px 20px 20px;
   padding: 10px;
-  margin: 10px;
 }
 
 article {
@@ -126,6 +126,7 @@ article {
   color: black;
   text-align: center;
   transition-delay: 400ms;
+  padding-bottom: 30px;
 }
 #tile4 img {
   padding: 30px;
@@ -136,7 +137,13 @@ article {
 .tile a {
   text-decoration: none;
   padding: 30px;
+
   justify-content: center;
+}
+
+.tile {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 
