@@ -1,4 +1,5 @@
-﻿
+﻿/* Gilles Witters - DevOps project */
+
 /* ------------------------------------------------------------ Animations ------------------------------------------------------------ */
 
 const observer = new IntersectionObserver((entries) => {

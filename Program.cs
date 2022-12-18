@@ -1,3 +1,5 @@
+// Gilles Witters - DevOps project
+
 using Contentful.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
